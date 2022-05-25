@@ -160,7 +160,7 @@
 			</properties>
 			<components/>
 		</object>
-		<object type="TALabel" name="Label1">
+		<object type="TALabel" name="LabelPos">
 			<properties>
 				<property name="Left" vt="Int8">104</property>
 				<property name="Top" vt="Int8">40</property>
