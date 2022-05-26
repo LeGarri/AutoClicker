@@ -1,7 +1,28 @@
+; AutoIt version :    3.3.14.5
+; Author         :    LeGarri
+;
+; Auto click as the CPS you want
+;
+;
+;
+; Version 1.0 : 26/05/2022
+;           - Release CPS 1 to 20, ctrl to save mouse pos and space to launch / stop auto clicker
+;
+
+
+
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_Icon=icon.ico
 #AutoIt3Wrapper_Outfile_x64=AutoClicker_v1_x64.exe
+#AutoIt3Wrapper_Res_Fileversion=1.0
+#AutoIt3Wrapper_Res_ProductName=Auto Clicker
+#AutoIt3Wrapper_Res_ProductVersion=1.0
+#AutoIt3Wrapper_Res_CompanyName=LeGarri
+#AutoIt3Wrapper_Res_Language=1033
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
+
+
+
 #include <ButtonConstants.au3>
 #include <EditConstants.au3>
 #include <GUIConstantsEx.au3>
