@@ -1,6 +1,6 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_Icon=icon.ico
-#AutoIt3Wrapper_Outfile_x64=AutoClicker.exe
+#AutoIt3Wrapper_Outfile_x64=AutoClicker_v1_x64.exe
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #include <ButtonConstants.au3>
 #include <EditConstants.au3>
@@ -116,16 +116,70 @@ While 1
 			$timeCost = 0
 
 			Switch $cps
+				Case 1
+					$timeCost = 2000
+
+				Case 2
+					$timeCost = 1000
+
+				Case 3
+					$timeCost = 600
+
+				Case 4
+					$timeCost = 450
+
 				Case 5
-					$timeCost = 160
+					$timeCost = 300
+
+				Case 6
+					$timeCost = 250
+
+				Case 7
+					$timeCost = 200
+
+				Case 8
+					$timeCost = 175
+
+				Case 9
+					$timeCost = 140
 
 				Case 10
-					$timeCost = 55
+					$timeCost = 110
+
+				Case 11
+					$timeCost = 97
+
+				Case 12
+					$timeCost = 90
+
+				Case 13
+					$timeCost = 70
+
+				Case 14
+					$timeCost = 60
+
+				Case 15
+					$timeCost = 49
+
+				Case 16
+					$timeCost = 45
+
+				Case 17
+					$timeCost = 32
+
+				Case 18
+					$timeCost = 30
+
+				Case 19
+					$timeCost = 22
+
+				Case 20
+					$timeCost = 19
 			EndSwitch
 
 			If TimerDiff($timer) >= $timeCost Then
 				$timerUsed = False
-				MouseClick($MOUSE_CLICK_PRIMARY, $x, $y)
+				MouseClick($MOUSE_CLICK_PRIMARY, $x, $y, 2)
 			EndIf
 		EndIf
 	EndIf
