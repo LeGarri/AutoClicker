@@ -42,7 +42,7 @@ $timer = 0
 
 
 
-#Region ### START Koda GUI section ### Form=C:\Users\quint\Desktop\AutoIt\AutoClicker\v1\FormAutoClicker.kxf
+#Region ### START Koda GUI section ###
 $FormAutoClicker = GUICreate("Auto Clicker by LeGarri", 295, 121, 313, 204)
 $InputCPS = GUICtrlCreateInput("10", 24, 8, 25, 21)
 GUICtrlSetBkColor(-1, 0xE3E3E3)
@@ -108,9 +108,15 @@ While 1
 			ReduceCPS()
 	EndSwitch
 
+
+
+
+
 	If _IsPressed("11") Then
 		SetPos(MouseGetPos()[0], MouseGetPos()[1])
 	EndIf
+
+
 
 	If _IsPressed("0D") And Not $spaceBarPressed Then
 		If $click Then
@@ -127,6 +133,10 @@ While 1
 	ElseIf $spaceBarPressed And Not _IsPressed("0D") Then
 		$spaceBarPressed = False
 	EndIf
+
+
+
+
 
 	If $click Then
 		If Not $timerUsed Then
